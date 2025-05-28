@@ -1,9 +1,9 @@
 import styles from "./FriendList.module.css";
 
-function FriendList({ friends }) {
+function FriendList(props) {
   return (
     <ul className={styles.friendList}>
-      {friends.map(({ avatar, name, isOnline, id }) => (
+      {props.friends.map(({ avatar, name, isOnline, id }) => (
         <li key={id} className={styles.friendCard}>
           <img src={avatar} alt="Avatar" width="48" />
           <p className={styles.name}>{name}</p>

@@ -4,6 +4,7 @@ import FriendList from "./components/FriendList/FriendList";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 import userData from "./data/userData.json";
+import friends from "./data/friends.json";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      {/* <FriendList /> */}
+      <FriendList friends={friends} />
       {/* <TransactionHistory /> */}
     </>
   );

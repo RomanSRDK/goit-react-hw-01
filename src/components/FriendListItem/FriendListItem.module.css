@@ -1,0 +1,18 @@
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 12px 0 6px;
+}
+
+.status {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
